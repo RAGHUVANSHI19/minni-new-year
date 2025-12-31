@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Year Wish ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Segoe UI;background:#fdf2f8;text-align:center}
+header{background:#be185d;color:white;padding:20px}
+nav a{color:white;margin:0 10px;text-decoration:none}
+.content{padding:80px 20px;font-size:20px}
+.heart{position:fixed;top:-10px;color:#e11d48;font-size:18px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh);opacity:0}}
+</style>
+</head>
+<body>
+
+<header>
+<h2>Minni ❤️</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="memories.html">Memories</a>
+<a href="wish.html">Wish</a>
+<a href="promise.html">Promise</a>
+<a href="love.html">For You</a>
+</nav>
+</header>
+
+<div class="content">
+<p>
+Happiest New Year to my source of happiness ❤️  
+source of smile 😊  
+source of constant support 🫶  
+source of constant love 💖  
+source of constant ladai jhagda 😤  
+source of my lifeline 💓  
+</p>
+
+<p>
+Happiest New Year Minni  
+my sunshine 🌞  
+my only sunshine  
+kya kya bole bhaiiiii  
+bas harr saal pehla wish tumko hi karna hai ❤️
+</p>
+</div>
+
+<script>
+setInterval(()=>{
+const h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=2+Math.random()*3+"s";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),5000);
+},300);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year Minni ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Segoe UI;background:#fff1f5;text-align:center}
+header{background:#be123c;color:white;padding:20px}
+nav a{color:white;margin:0 10px;text-decoration:none;font-weight:bold}
+.hero{padding:80px 20px;font-size:20px}
+.heart{position:fixed;top:-10px;font-size:18px;color:#e11d48;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh);opacity:0}}
+</style>
+</head>
+<body>
+
+<header>
+<h2>Minni ❤️</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="memories.html">Memories</a>
+<a href="wish.html">Wish</a>
+<a href="promise.html">Promise</a>
+<a href="love.html">For You</a>
+</nav>
+</header>
+
+<div class="hero">
+<p>
+This is a small effort to make your smile more wider Minni ❤️  
+I know we are being distant for about a month  
+but Minni I'm falling everyday for you 🫶  
+Minni sach me boht hai kehne ko  
+lekin abhi tum ye dekho ❤️
+</p>
+</div>
+
+<script>
+setInterval(()=>{
+const h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=2+Math.random()*3+"s";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),5000);
+},300);
+</script>
+
+</body>
+</html>
